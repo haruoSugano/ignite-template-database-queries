@@ -1,0 +1,20 @@
+{
+  "username": "postgres",
+  "password": "docker",
+  "type": "postgres",
+  "name": "default",
+  "host": "localhost",
+  "port": 5432,
+  "database": "queries_challenge",
+  "entities": [
+    "./src/modules/cars/entities/**/*{.ts,.js}",
+    "./src/modules/accounts/entities/**/*{.ts,.js}"
+  ],
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations",
+    "entitiesDir": ".src/modules/cars/entities"
+  }
+}
